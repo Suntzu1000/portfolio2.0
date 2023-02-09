@@ -28,7 +28,7 @@
   background: linear-gradient(
     92.23deg,
     #FA4160 21.43%,
-    #3B0F16 50.63%,
+    #dc2626 50.63%,
     #7A202F 100%,
     #f43f5e 117.04%
   );
@@ -63,7 +63,7 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#42A6E3] to-[#881337] font-bold font-primary hover:from-[#881337] hover:to-[#42A6E3];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#f87171] to-[#dc2626] font-bold font-primary hover:from-[#dc2626] hover:to-[#f87171];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
