@@ -2,7 +2,7 @@ import React from 'react';
 
 
 const Header = () => {
-  return <header className='bg-gradient-to-r from-red-400 to-red-700 ' >
+  return <header className=' py-8 bg-gradient-to-r from-red-400 to-red-700 ' >
     <div className="container mx-auto">
       <div className='flex justify-between items-center ' >
         <a href="home" >

@@ -48,7 +48,7 @@ const About = () => {
               <div className="text-[40px] font-tertiary text-gradient mb-2 ">
                 {inView ? <CountUp start={0} end={13} duration={3} /> : null}
               </div>
-              <div classNames="font-primary text-sm tracking-[2px]">
+              <div className="font-primary text-sm tracking-[2px]">
                 Anos de <br />
                 experiência
               </div>
@@ -57,7 +57,7 @@ const About = () => {
               <div className="text-[40px] font-tertiary text-gradient mb-2 ">
                 {inView ? <CountUp start={0} end={20} duration={3} /> : null}+
               </div>
-              <div classNames="font-primary text-sm tracking-[2px]">
+              <div className="font-primary text-sm tracking-[2px]">
                 Projetos no <br />
                 <a
                   href="https://github.com/Suntzu1000"
