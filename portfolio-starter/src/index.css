@@ -10,7 +10,7 @@
     #3B0F16 100%,
     #FA4160 117.04%
   );
-  box-shadow: 0px 4.42184px 107.23px rgba(255, 86, 246, 0.51);
+  box-shadow: 0px 4.42184px 107.23px #991b1b;
 }
 
 .btn:hover {
