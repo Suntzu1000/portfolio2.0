@@ -2,19 +2,20 @@ import React from "react";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { Link } from "react-scroll";
 
 const services = [
   {
     name: "React Developer",
-    description: "Lorem",
+    description: "",
   },
   {
     name: "Node Developer",
-    description: "Lorem",
+    description: "",
   },
   {
-    name: "React Developer",
-    description: "Lorem",
+    name: "Next Developer",
+    description: "",
   },
 ];
 
@@ -32,16 +33,18 @@ const Services = () => {
           >
             <h2 className="h2 text-accent mb-6 ">O que eu faço.</h2>
             <h3 className="h3 max-w-[455px] mb-16 ">preencher</h3>
-            <button btn btn-sm>
-              Ver Mais Trabalhos
-            </button>
+            <Link>
+              {" "}
+              <button className="btn btn-sm">Ver Mais Trabalhos</button>
+            </Link>
           </motion.div>
           <motion.div
-           variants={fadeIn("left", 0.3)}
-           initial="hidden"
-           whileInView={"show"}
-           viewport={{ once: false, amount: 0.3 }}
-          className="flex-1 ">
+            variants={fadeIn("left", 0.3)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.3 }}
+            className="flex-1 "
+          >
             <div>
               {services.map((service, index) => {
                 const { name, description } = service;

@@ -5,9 +5,10 @@ import { fadeIn } from "../variants";
 import img1 from "../assets/portfolio-img1.png";
 import img2 from "../assets/portfolio-img2.png";
 import img3 from "../assets/portfolio-img3.png";
+import { Link } from "react-scroll";
 const Work = () => {
   return (
-    <section className="section" id="work">
+    <section className="section pt-72 " id="work">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10 ">
           <motion.div
@@ -23,12 +24,9 @@ const Work = () => {
                 trabalhos!
               </h2>
               <p className="max-w-sm mb-16 ">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Voluptates aspernatur sapiente vero architecto perferendis,
-                quibusdam provident repudiandae eveniet doloribus. Nesciunt aut
-                maxime id excepturi voluptates nobis minus facere velit quidem!
+                Aqui estão, alguns projetos feitos por mim sempre com muita energia depositada em cada projeto feito. Com Tecnologias modernas para uma melhor vizualização para quem vai acessa-lo!
               </p>
-              <button className="btn btn-sm">Ver todos os Projetos</button>
+              <Link  ><button className="btn btn-sm">Ver todos os Projetos</button></Link>
             </div>
             <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl ">
               <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 "></div>
