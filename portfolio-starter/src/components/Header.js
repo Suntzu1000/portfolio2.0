@@ -1,17 +1,21 @@
-import React from 'react';
-
+import React from "react";
+import { Link } from "react-scroll";
 
 const Header = () => {
-  return <header className=' py-5 bg-gradient-to-r from-red-400 to-red-700 ' >
-    <div className="container mx-auto">
-      <div className='flex justify-between items-center ' >
-        <a href="home" >
-          <h1 className='text-5xl font-bold  ' >Portfólio</h1>
-        </a>
-        <button className='btn btn-sm' >Contrate-me</button>
+  return (
+    <header className=" py-5 bg-gradient-to-r from-red-400 to-red-700 ">
+      <div className="container mx-auto">
+        <div className="flex justify-between items-center ">
+          <a href="home">
+            <h1 className="text-5xl font-bold  ">Portfólio</h1>
+          </a>
+          <Link to="contact" activeClass="active" smooth={true} spy={true}>
+            <button className="btn btn-sm">Contrate-me</button>
+          </Link>
+        </div>
       </div>
-    </div>
-  </header>;
+    </header>
+  );
 };
 
 export default Header;

@@ -70,7 +70,10 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lx:mx-0 "
             >
-              <button className="btn btn-lg">Contrate-me</button>
+              <Link to="contact" activeClass="active" smooth={true} spy={true}>
+                <button className="btn btn-lg">Contrate-me</button>
+              </Link>
+
               <Link
                 to="services"
                 activeClass="active"
@@ -79,7 +82,9 @@ const Banner = () => {
                 className="text-gradient btn-link"
               >
                 {" "}
-                <a href="services" target="_blank" rel="noopener noreferrer">Meu Portfólio</a>{" "}
+                <a href="services" target="_blank" rel="noopener noreferrer">
+                  Meu Portfólio
+                </a>{" "}
               </Link>
             </motion.div>
 
@@ -88,14 +93,19 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex text-[30px] gap-x-6 max-w-max mx-auto lg:mx-0  "
+              className="flex text-[60px] gap-x-6 max-w-max mx-auto lg:mx-0  "
             >
-              <a href="https://github.com/Suntzu1000" target="_blank" rel="noopener noreferrer" >
+              <a
+                href="https://github.com/Suntzu1000"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <FaGithub />
               </a>
               <a
                 href="https://www.linkedin.com/in/gabriel-andrade-52a803205/"
-                target="_blank" rel="noopener noreferrer" 
+                target="_blank"
+                rel="noopener noreferrer"
               >
                 <FaLinkedin />
               </a>

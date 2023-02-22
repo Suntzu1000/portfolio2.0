@@ -32,8 +32,8 @@ const Services = () => {
             className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0 "
           >
             <h2 className="h2 text-accent mb-6 ">O que eu faço.</h2>
-            <h3 className="h3 max-w-[455px] mb-16 ">preencher</h3>
-            <Link>
+            <h3 className="h3 max-w-[455px] mb-16 ">JavaScript Developer</h3>
+            <Link to="work" activeClass="active" smooth={true} spy={true}>
               {" "}
               <button className="btn btn-sm">Ver Mais Trabalhos</button>
             </Link>

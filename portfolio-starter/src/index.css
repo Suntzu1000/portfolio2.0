@@ -10,14 +10,14 @@
     #3B0F16 100%,
     #FA4160 117.04%
   );
-  box-shadow: 0px 4.42184px 107.23px #991b1b;
+  box-shadow: 0px 4.42184px 107.23px #dc2626;
 }
 
 .btn:hover {
   background: linear-gradient(
     92.23deg,
     #FA4160 21.43%,
-    #3B0F16 50.63%,
+    #dc2626 50.63%,
     #7A202F 100%,
     #f43f5e 117.04%
   );
@@ -27,10 +27,10 @@
 .active {
   background: linear-gradient(
     92.23deg,
-    #FA4160 21.43%,
+    #ef4444 21.43%,
     #dc2626 50.63%,
-    #7A202F 100%,
-    #f43f5e 117.04%
+    #f87171 100%,
+    #ef4444 117.04%
   );
 }
 
@@ -63,7 +63,7 @@
     @apply text-base;
   }
   .text-gradient {
-    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#f87171] to-[#dc2626] font-bold font-primary hover:from-[#dc2626] hover:to-[#f87171];
+    @apply bg-gradient-to-r text-transparent bg-clip-text from-[#ef4444] to-[#dc2626] font-bold font-primary hover:from-[#dc2626] hover:to-[#f87171];
   }
   .section {
     @apply py-8 lg:py-24 lg:h-screen flex items-center;
