@@ -2,7 +2,7 @@ import React from "react";
 import Image from "../assets/avatar.png";
 import { Link } from "react-scroll";
 
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
@@ -40,16 +40,29 @@ const Banner = () => {
               viewport={{ once: false, amount: 0.7 }}
               className="mb-6 text-[36px] lg:text-[60px] font-secondary font-semibold uppercase leading-[1] "
             >
-              <span className=" text-white mr-4">
-                Eu sou um Desenvolvedor JavaScript
-              </span>
+              <span className=" text-white mr-4">Eu sou um Desenvolvedor</span>
+              <br />
               <TypeAnimation
-                sequence={["ReactJS", 2000, "NextJS", 2000, "NodeJS"]}
+                sequence={[
+                  "JavaScript",
+                  4000,
+                  "Typescript",
+                  4000,
+                  "Frameworks:",
+                  2000,
+                  "ReactJS",
+                  2000,
+                  "NextJS",
+                  2000,
+                  "NodeJS",
+                ]}
                 speed={50}
                 className="text-accent"
                 wrapper="span"
                 repeat={Infinity}
               />
+
+             
             </motion.div>
             <motion.p
               variants={fadeIn("up", 0.5)}
@@ -108,6 +121,13 @@ const Banner = () => {
                 rel="noopener noreferrer"
               >
                 <FaLinkedin />
+              </a>
+              <a
+                href="https://wa.me/62995396918"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FaWhatsapp />
               </a>
             </motion.div>
           </div>
