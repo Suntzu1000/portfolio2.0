@@ -1,26 +1,27 @@
 module.exports = {
-  content: ['./src/**/*.{js,jsx,ts,tsx}'],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
-      tertiary: 'Aldrich',
+      primary: "Orbitron",
+      secondary: "Rajdhani",
+      tertiary: "Aldrich",
     },
     container: {
       padding: {
-        DEFAULT: '40px',
+        DEFAULT: "40px",
       },
     },
     screens: {
-      sm: '640px',
-      md: '768px',
-      lg: '960px',
-      xl: '1200px',
+      xs: "480px",
+      sm: "640px",
+      md: "768px",
+      lg: "960px",
+      xl: "1200px",
     },
     extend: {
       colors: {
-        primary: '#0a0a0a',
-        accent: '#be123c',
+        primary: "#0a0a0a",
+        accent: "#be123c",
       },
       backgroundImage: {
         site: "url('./assets/site-bg.jpg')",

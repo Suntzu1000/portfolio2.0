@@ -84,7 +84,7 @@ const Banner = () => {
               className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lx:mx-0 "
             >
               <Link to="contact" activeClass="active" smooth={true} spy={true}>
-                <button className="btn btn-lg">Contrate-me</button>
+                <button className="btn btn-lg "> <p className=" lg:text-base text-xs"> Contrate-me</p></button>
               </Link>
 
               <Link
@@ -96,7 +96,7 @@ const Banner = () => {
               >
                 {" "}
                 <a href="services" target="_blank" rel="noopener noreferrer">
-                  Meu Portfólio
+                 <p> Meu Portfólio</p>
                 </a>{" "}
               </Link>
             </motion.div>

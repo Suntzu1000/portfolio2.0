@@ -10,7 +10,7 @@ const Header = () => {
             <h1 className="text-5xl font-bold  ">Portfólio</h1>
           </a>
           <Link to="contact" activeClass="active" smooth={true} spy={true}>
-            <button className="btn btn-sm">Contrate-me</button>
+            <button className="btn btn-sm"> <p className="lg:text-base text-xs">Contrate-me</p> </button>
           </Link>
         </div>
       </div>
