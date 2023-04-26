@@ -7,15 +7,15 @@ import { Link } from "react-scroll";
 const services = [
   {
     name: "React Developer",
-    description: "",
+    description: "Se você está procurando uma solução moderna para desenvolvimento de aplicações web, então React é a escolha certa.",
   },
   {
     name: "Node Developer",
-    description: "",
+    description: "Como desenvolvedor em Node.js, sou capaz de criar aplicativos altamente eficientes que são executados de maneira rápida e confiável. Isso significa que posso ajudar a criar soluções de software que são capazes de lidar com grandes volumes de tráfego e muitos usuários simultâneos, o que é especialmente importante em empresas que precisam escalar seus sistemas.",
   },
   {
     name: "Next Developer",
-    description: "",
+    description: "O Next.js é um framework JavaScript que permite criar aplicações web com React de forma fácil e rápida. Com ele, podemos desenvolver sites e aplicações com funcionalidades avançadas como SSR (server-side rendering), SSG (static site generation), roteamento dinâmico e muitas outras.",
   },
 ];
 
@@ -43,21 +43,21 @@ const Services = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 "
+            className="flex-2 "
           >
             <div>
               {services.map((service, index) => {
                 const { name, description } = service;
                 return (
                   <div
-                    className="border-b border-white/20 h-[146px] mb-[38px] flex "
+                    className="border-b border-white/20 h-[185px] mb-[38px] flex flex-1 "
                     key={index}
                   >
-                    <div className="max-w-[476px]">
+                    <div className="max-w-[476px] ">
                       <h4 className="text-[20px] tracking-wider font-primary font-semibold mb-6 ">
                         {name}
                       </h4>
-                      <p className="font-secondary leading-tight ">
+                      <p className="font-secondary leading-tight font-medium ">
                         {description}
                       </p>
                     </div>
