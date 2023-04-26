@@ -21,7 +21,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="section mb-96 " id="services">
+    <section className="section" id="services">
       <div className="container mx-auto pt-60 sm:pt-0 ">
         <div className="flex flex-col lg:flex-row">
           <motion.div
@@ -35,7 +35,7 @@ const Services = () => {
             <h3 className="h3 max-w-[455px] mb-16 ">JavaScript Developer</h3>
             <Link to="work" activeClass="active" smooth={true} spy={true}>
               {" "}
-              <button className="btn btn-sm">Ver Mais Trabalhos</button>
+              <button className="btn btn-sm"> Trabalhos</button>
             </Link>
           </motion.div>
           <motion.div
@@ -50,7 +50,7 @@ const Services = () => {
                 const { name, description } = service;
                 return (
                   <div
-                    className="border-b border-white/20 h-[185px] mb-[38px] flex flex-1 xs:h-[350px] "
+                    className="border-b border-white/20 lg:h-[185px] mb-[38px] flex flex-1 xs:h-[350px]  "
                     key={index}
                   >
                     <div className="max-w-[476px] ">

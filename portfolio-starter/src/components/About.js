@@ -17,7 +17,6 @@ const About = () => {
     <div className="section " id="about" ref={ref}>
       <div className="container mx-auto py-12 sm:py-8 ">
         <div className="flex flex-col gap-y-10 lg:flex-row lg:items-center lg:gap-x-20 lg:gap-y-0 h-screen ">
-
           <motion.div
             variants={fadeIn("left", 0.5)}
             initial="hidden"
@@ -65,9 +64,16 @@ const About = () => {
             </div>
 
             <div className="lg:flex gap-x-8 items-center xs:grid xs:gap-4 xs:grid-cols-1 xs:text-2xl ">
-              <Link to="contact" activeClass="active" smooth={true} spy={true}>
-                <button className="btn btn-lg">Contrate-me</button>
-              </Link>
+              <button className="btn btn-lg">
+                <a
+                  href="https://wa.me/62995396918"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  
+                >
+                  Contrate-me
+                </a>
+                </button>
               <a
                 href="https://github.com/Suntzu1000"
                 target="_blank"
