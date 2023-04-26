@@ -7,10 +7,10 @@ const Header = () => {
       <div className="container mx-auto">
         <div className="flex justify-between items-center ">
           <a href="home">
-            <h1 className="text-5xl font-bold  ">Portfólio</h1>
+            <h1 className="text-5xl font-bold xs:text-center xs:justify-items-center  ">Portfólio</h1>
           </a>
           <Link to="contact" activeClass="active" smooth={true} spy={true}>
-            <button className="btn btn-sm"> <p className="lg:text-base text-xs">Contrate-me</p> </button>
+            <button className="btn btn-sm xs:text-block hidden sm:block">Contrate-me </button>
           </Link>
         </div>
       </div>

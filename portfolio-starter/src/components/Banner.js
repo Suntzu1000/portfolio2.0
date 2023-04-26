@@ -12,7 +12,7 @@ import { fadeIn } from "../variants";
 const Banner = () => {
   return (
     <section
-      className=" section min-h-[85vh] lg:min-h-[78vh] flex items-center "
+      className=" section min-h-[85vh] lg:min-h-[78vh] flex items-center mb-96 "
       id="home"
     >
       <div className="container mx-auto">
@@ -81,10 +81,10 @@ const Banner = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.7 }}
-              className="flex max-w-max gap-x-6 items-center mb-12 mx-auto lx:mx-0 "
+              className="lg:flex max-w-max gap-x-6 items-center mb-12 mx-auto lx:mx-0 xs:grid xs:gap-4 xs:grid-cols-1 "
             >
               <Link to="contact" activeClass="active" smooth={true} spy={true}>
-                <button className="btn btn-lg "> <p className=" lg:text-base text-xs"> Contrate-me</p></button>
+                <button className="btn btn-lg ">  Contrate-me</button>
               </Link>
 
               <Link

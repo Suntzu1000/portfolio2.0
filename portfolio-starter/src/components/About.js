@@ -64,7 +64,7 @@ const About = () => {
               </div>
             </div>
 
-            <div className="flex gap-x-8 items-center ">
+            <div className="lg:flex gap-x-8 items-center xs:grid xs:gap-4 xs:grid-cols-1 xs:text-2xl ">
               <Link to="contact" activeClass="active" smooth={true} spy={true}>
                 <button className="btn btn-lg">Contrate-me</button>
               </Link>

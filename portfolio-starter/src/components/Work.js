@@ -4,7 +4,6 @@ import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
 import { projects } from "../data/Data";
 
-
 const Work = () => {
   return (
     <section className="section mt-96 mb-96 " id="work">
@@ -28,15 +27,16 @@ const Work = () => {
                 modernas para uma melhor vizualização para quem vai acessa-lo!
               </p>
               <Link to="projects">
-                <button className="btn btn-sm">Ver todos os Projetos</button>
+                <button className="btn btn-sm">Todos Projetos</button>
               </Link>
-</div>
-              <motion.div 
-               variants={fadeIn("", 0.3)}
-               initial="hidden"
-               whileInView={"show"}
-               viewport={{ once: false, amount: 0.3 }}
-               className="grid gap-4 grid-cols-4 grid-rows-3">
+            </div>
+            <motion.div
+              variants={fadeIn("", 0.3)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.3 }}
+              className="grid gap-4 grid-cols-4 grid-rows-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 md:gap-4 xs:grid-cols-1  xs:grid-col-1 "
+            >
               {projects.map((project, index) => (
                 <a
                   href={project.link}
@@ -45,7 +45,7 @@ const Work = () => {
                   key={index}
                 >
                   <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl w-64 h-74 ">
-                    <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 "></div>
+                    <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 "/>
                     <img
                       className="group-hover:scale-125 transition-all duration-500 "
                       src={project.image}
@@ -64,8 +64,7 @@ const Work = () => {
                   </div>
                 </a>
               ))}
-             </motion.div>
-            
+            </motion.div>
           </motion.div>
         </div>
       </div>

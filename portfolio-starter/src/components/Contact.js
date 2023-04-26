@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import emailjs from "emailjs-com";
@@ -6,7 +6,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Contact = () => {
-  const form = useRef();
+  //const form = useRef();
 
   const notify = () => {
     toast.success('Enviada com Sucesso :)', {
@@ -89,7 +89,7 @@ const Contact = () => {
             ></textarea>
             <input
               type="submit"
-              className="btn btn-lg"
+              className="btn btn-lg xs:text-xs"
               value="Enviar Mensagem"
               onClick={notify}
             />
