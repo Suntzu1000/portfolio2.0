@@ -1,13 +1,9 @@
 import React from "react";
-
 import CountUp from "react-countup";
-
 import { useInView } from "react-intersection-observer";
-
 import { motion } from "framer-motion";
-
 import { fadeIn } from "../variants";
-import { Link } from "react-scroll";
+
 
 const About = () => {
   const [ref, inView] = useInView({

@@ -1,13 +1,11 @@
 import React from "react";
 import Image from "../assets/avatar.png";
 import { Link } from "react-scroll";
-
 import { FaGithub, FaLinkedin, FaWhatsapp } from "react-icons/fa";
-
 import { TypeAnimation } from "react-type-animation";
 import { motion } from "framer-motion";
-
 import { fadeIn } from "../variants";
+
 
 const Banner = () => {
   return (
