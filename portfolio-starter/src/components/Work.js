@@ -60,8 +60,8 @@ const Work = () => {
                       </span>
                     </div>
                   </div>
-                  <div className="group relative overflow-hidden border-4 border-white/50 rounded-xl w-64 h-74 " >
-                  <div className="hidden lg:block absolute -bottom-full  group-hover:relative group-hover:text-center transition-all duration-500 z-500 ">
+                  <div className="group relative overflow-hidden border-4 border-white/50 rounded-xl w-64 h-74 ">
+                    <div className="hidden lg:block absolute -bottom-full  group-hover:relative group-hover:text-center transition-all duration-500 z-500 ">
                       <p className="text-white">{project.description}</p>
                     </div>
                   </div>
