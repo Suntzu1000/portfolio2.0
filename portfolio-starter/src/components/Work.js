@@ -6,74 +6,63 @@ import { projects } from "../data/Data";
 
 const Work = () => {
   return (
-    <section className="section mt-96 mb-96 " id="work">
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row flex-wrap justify-center mx-4 lg:mx-0 ">
+    <section className="mt-24 mb-24 p-6 bg-[#281D54] text-white mx-auto container" id="work">
+      <div className="mx-4 lg:mx-0 flex flex-col lg:flex-row flex-wrap justify-center">
+        <motion.div
+          variants={fadeIn("right", 0.3)}
+          initial="hidden"
+          whileInView={"show"}
+          viewport={{ once: false, amount: 0.3 }}
+          className="flex-1 flex flex-col gap-6 mb-10 lg:mb-0"
+        >
+          <div className="flex-1 flex flex-col gap-6">
+            <h2 className="text-4xl font-bold">Meus últimos trabalhos!</h2>
+            <p className="text-lg">
+              Aqui estão alguns dos projetos que eu fiz, sempre com muita
+              energia e entusiasmo. Usando tecnologias modernas para uma melhor visualização!
+            </p>
+            <Link to="projects">
+              <button className="bg-white text-[#281D54] hover:bg-purple-500 hover:text-white font-bold py-2 px-4 rounded">
+                Ver todos os projetos
+              </button>
+            </Link>
+          </div>
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("", 0.3)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.3 }}
-            className="flex-1 flex flex-col gap-y-12 mb-10 lg:mb-0  "
+            className="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4"
           >
-            <div className="flex-1 flex flex-col gap-y-10 ">
-              <h2 className="h2 leading-tight text-accent ">
-                Meu últimos <br />
-                trabalhos!
-              </h2>
-              <p className="max-w-sm mb-16 ">
-                Aqui estão, alguns projetos feitos por mim sempre com muita
-                energia depositada em cada projeto feito. Com Tecnologias
-                modernas para uma melhor vizualização para quem vai acessa-lo!
-              </p>
-              <Link to="projects">
-                <button className="btn btn-sm">Todos Projetos</button>
-              </Link>
-            </div>
-            <motion.div
-              variants={fadeIn("", 0.3)}
-              initial="hidden"
-              whileInView={"show"}
-              viewport={{ once: false, amount: 0.3 }}
-              className="grid gap-4 grid-cols-4 grid-rows-4 xl:grid-cols-4 lg:grid-cols-3 md:grid-cols-2 md:gap-4 xs:grid-cols-1  xs:grid-col-1 "
-            >
-              {projects.map((project, index) => (
-                <a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  key={index}
-                >
-                  <div className="group relative overflow-hidden border-2 border-white/50 rounded-xl w-64 h-74 ">
-                    <div className="group-hover:bg-black/70 w-full h-full absolute z-40 transition-all duration-300 " />
-                    <img
-                      className="group-hover:scale-125 transition-all duration-500 "
-                      src={project.image}
-                      alt=""
-                    />
-                    <div className="absolute -bottom-full left-12 group-hover:bottom-24 transition-all duration-500 z-500  ">
-                      <span className="text-gradient">{project.name}</span>
-                    </div>
-                    <div className="absolute -bottom-full left-12 group-hover:bottom-14 transition-all duration-700 z-50  ">
-                      <span className="text-3xl text-white hover:text-red-400 ">
-                        Acessar
-                      </span>
-                    </div>
-                  </div>
-                  <div className="group relative overflow-hidden border-4 border-white/50 rounded-xl w-64 h-74 ">
-                    <div className="hidden lg:block absolute -bottom-full  group-hover:relative group-hover:text-center transition-all duration-500 z-500 ">
-                      <p className="text-white">{project.description}</p>
-                    </div>
-                  </div>
-                </a>
-              ))}
-            </motion.div>
+            {projects.map((project, index) => (
+              <a
+                href={project.link}
+                target="_blank"
+                rel="noopener noreferrer"
+                key={index}
+                className="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-200"
+              >
+                <img
+                  className="w-full h-64 object-cover"
+                  src={project.image}
+                  alt={project.name}
+                />
+                <div className="p-4 bg-purple-500 text-white">
+                  <h3 className="font-bold text-xl">{project.name}</h3>
+                  <p>{project.description}</p>
+                </div>
+              </a>
+            ))}
           </motion.div>
-        </div>
+        </motion.div>
       </div>
     </section>
   );
 };
 
 export default Work;
+
+
+
+
 //group-hover:scale-125 transition-all duration-500
