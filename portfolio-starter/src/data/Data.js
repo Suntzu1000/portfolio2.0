@@ -4,8 +4,15 @@ import img3 from "../assets/portfolio-img3.png";
 import img4 from "../assets/portfolio-img4.png";
 import img5 from "../assets/hotel.png";
 import img6 from "../assets/Ecommerce.png";
+import img7 from "../assets/eccnomiza.png";
 
 export const projects = [
+  {
+    name: "Ecommerce",
+    image: img7,
+    link: "https://ecommerce-nomiza.onrender.com/",
+    description: " ...",
+  },
   {
     name: "Ecommerce",
     image: img6,
