@@ -1,10 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 import { Link } from "react-scroll";
+import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai"; // Importar ícones
 import { projects } from "../data/Data";
 
 const Work = () => {
+  const [expandedProjectIndex, setExpandedProjectIndex] = useState(-1);
+
+  const toggleProjectDescription = (index) => {
+    if (expandedProjectIndex === index) {
+      setExpandedProjectIndex(-1);
+    } else {
+      setExpandedProjectIndex(index);
+    }
+  };
+
   return (
     <section className="mt-24 mb-24 p-6 bg-[#281D54] text-white mx-auto container" id="work">
       <div className="mx-4 lg:mx-0 flex flex-col lg:flex-row flex-wrap justify-center">
@@ -35,23 +46,31 @@ const Work = () => {
             className="grid gap-4 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-4 xl:grid-cols-4"
           >
             {projects.map((project, index) => (
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
+              <div
                 key={index}
                 className="group relative overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-200"
               >
-                <img
-                  className="w-full h-64 object-cover"
-                  src={project.image}
-                  alt={project.name}
-                />
-                <div className="p-4 bg-purple-500 text-white">
+                <a
+                  href={project.link}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <img
+                    className="w-full h-64 object-cover"
+                    src={project.image}
+                    alt={project.name}
+                  />
+                </a>
+                <div
+                  className="p-4 bg-purple-500 text-white cursor-pointer"
+                  onClick={() => toggleProjectDescription(index)}
+                >
                   <h3 className="font-bold text-xl">{project.name}</h3>
-                  <p>{project.description}</p>
+                  <p>
+                    {expandedProjectIndex === index ? project.description : 'Clique Aqui'}
+                  </p>
                 </div>
-              </a>
+              </div>
             ))}
           </motion.div>
         </motion.div>
