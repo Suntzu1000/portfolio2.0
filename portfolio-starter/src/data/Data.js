@@ -5,8 +5,15 @@ import img4 from "../assets/portfolio-img4.png";
 import img5 from "../assets/hotel.png";
 import img6 from "../assets/Ecommerce.png";
 import img7 from "../assets/eccnomiza.png";
+import img8 from "../assets/admin.png";
 
 export const projects = [
+  {
+    name: "Painel De Controle",
+    image: img8,
+    link: "http://orion.vps-kinghost.net/free",
+    description: " O nosso Painel Administrativo React e Node.js é uma solução versátil e poderosa para a administração eficaz. Com uma interface intuitiva, segurança sólida e uma variedade de funcionalidades, ele permite que você gerencie seus sistemas, sites ou aplicativos de forma mais eficiente e produtiva.",
+  },
   {
     name: "Ecommerce",
     image: img7,

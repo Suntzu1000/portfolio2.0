@@ -66,7 +66,7 @@ const Work = () => {
                   onClick={() => toggleProjectDescription(index)}
                 >
                   <h3 className="font-bold text-xl">{project.name}</h3>
-                  <p>
+                  <p className="hover:scale-110 hover:font-bold" >
                     {expandedProjectIndex === index ? project.description : 'Clique Aqui'}
                   </p>
                 </div>
