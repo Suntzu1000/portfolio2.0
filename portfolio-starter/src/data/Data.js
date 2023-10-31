@@ -1,6 +1,5 @@
 import img1 from "../assets/portfolio-img1.png";
-import img2 from "../assets/portfolio-img2.png";
-import img3 from "../assets/portfolio-img3.png";
+import img3 from "../assets/DD.png";
 import img4 from "../assets/portfolio-img4.png";
 import img5 from "../assets/hotel.png";
 import img6 from "../assets/ecommerce.png";
@@ -8,6 +7,14 @@ import img7 from "../assets/eccnomiza.png";
 import img8 from "../assets/admin.png";
 
 export const projects = [
+
+  {
+    name: "CarHub",
+    image: img3,
+    link: "https://next-application-sigma.vercel.app/",
+    description:
+      "Sistema de vendas de carros",
+  },
   {
     name: "Painel De Controle",
     image: img8,
@@ -48,18 +55,5 @@ export const projects = [
     description:
       "Essa landing page foi otimizada para uma melhor experiência do usuário, com um design atraente, informações claras e objetivas.",
   },
-  {
-    name: "Design",
-    image: img2,
-    link: "https://bancoteste.vercel.app/",
-    description:
-      "Descrição do projeto Lorem ipsum dolor sit, amet consectetur adipisicing elit. 2",
-  },
-  {
-    name: "Dashboard",
-    image: img3,
-    link: "https://admin-front-end.onrender.com",
-    description:
-      "Descrição do projeto Lorem ipsum dolor sit, amet consectetur adipisicing elit. 3",
-  },
+  
 ];
