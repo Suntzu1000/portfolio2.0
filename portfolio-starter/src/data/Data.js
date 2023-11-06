@@ -5,9 +5,17 @@ import img5 from "../assets/hotel.png";
 import img6 from "../assets/ecomm.png";
 import img7 from "../assets/eccnomiza.png";
 import img8 from "../assets/admin.png";
+import img9 from "../assets/admin2.png";
 
 export const projects = [
 
+  {
+    name: "Painel Admin",
+    image: img9,
+    link: "https://next13-ecm.vercel.app/c953ae39-f452-4ee0-8625-992234658fbd",
+    description:
+      "Painel Admin",
+  },
   {
     name: "CarHub",
     image: img3,

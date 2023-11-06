@@ -56,7 +56,7 @@ const Work = () => {
                   rel="noopener noreferrer"
                 >
                   <img
-                    className="w-full h-64 object-cover"
+                    className="w-full h-64 object-contain"
                     src={project.image}
                     alt={project.name}
                   />
