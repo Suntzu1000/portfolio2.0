@@ -6,9 +6,17 @@ import img6 from "../assets/ecomm.png";
 import img7 from "../assets/eccnomiza.png";
 import img8 from "../assets/admin.png";
 import img9 from "../assets/admin2.png";
+import img10 from "../assets/ecm.png";
 
 export const projects = [
 
+  {
+    name: "Loja",
+    image: img10,
+    link: "https://next13-ecm-store.vercel.app/",
+    description:
+      "Ecommerce Store",
+  },
   {
     name: "Painel Admin",
     image: img9,
@@ -26,7 +34,7 @@ export const projects = [
   {
     name: "Painel De Controle",
     image: img8,
-    link: "http://orion.vps-kinghost.net/free",
+    link: "https://stok.onrender.com",
     description: " O nosso Painel Administrativo React e Node.js é uma solução versátil e poderosa para a administração eficaz. Com uma interface intuitiva, segurança sólida e uma variedade de funcionalidades, ele permite que você gerencie seus sistemas, sites ou aplicativos de forma mais eficiente e produtiva.",
   },
   {
