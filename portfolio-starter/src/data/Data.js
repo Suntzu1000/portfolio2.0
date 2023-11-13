@@ -13,7 +13,7 @@ export const projects = [
   {
     name: "Loja",
     image: img10,
-    link: "https://next13-ecm-store.vercel.app/",
+    link: "https://next13-ecm-store.vercel.app/category/8f61064e-c2bf-4df0-be36-dce7882386e4",
     description:
       "Ecommerce Store",
   },
